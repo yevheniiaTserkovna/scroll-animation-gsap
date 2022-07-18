@@ -1,0 +1,87 @@
+/* for desktop */
+.scrollWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.scrollWrapper .leftPanel {
+  height: 100vh !important;
+}
+
+.scrollWrapper .leftPanel .imgWrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollWrapper .rightPanel {
+  padding: 0 20px;
+}
+
+.scrollWrapper .imageContainer {
+  position: relative;
+  height: 100%;
+}
+
+.scrollWrapper .imageContainer img {
+  width: 100%;
+  /* height: 575px; */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.scrollWrapper .imageContainer .imgWrapper:not(:first-child) {
+  opacity: 0;
+}
+
+.scrollWrapper .contentWrapper:not(:first-child) > div {
+  opacity: 0;
+}
+
+.scrollWrapper .contentWrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50vh;
+}
+
+.scrollWrapper .contentWrapper:last-child,
+.scrollWrapper .contentWrapper:first-child {
+  height: 100vh;
+}
+
+/* for mobile */
+.scrollWrapperMobile {
+  padding: 0 10px;
+}
+
+.scrollWrapperMobile img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* for content */
+.content {
+  font-family: "HCo Gotham SSm", Helvetica, sans-serif;
+}
+
+.contentTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contentText {
+  font-size: 20px;
+}

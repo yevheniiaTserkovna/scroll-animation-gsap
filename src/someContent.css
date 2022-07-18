@@ -1,0 +1,7 @@
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightskyblue;
+  height: 100px;
+}
